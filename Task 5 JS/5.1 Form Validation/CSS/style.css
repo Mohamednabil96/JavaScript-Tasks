@@ -1,0 +1,13 @@
+body{
+    overflow-x: hidden;
+}
+div {
+    margin: 1vh;
+    text-align: center;
+}
+
+#invalidInput1, #invalidInput2, #invalidInput3, 
+#invalidInput4 ,#invalidInput5, #invalidInput6{
+    display: none;
+}
+

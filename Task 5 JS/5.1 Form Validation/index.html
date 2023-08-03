@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5.1 Vaildation Game</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center mt-4 mb-5">
+            <h1><span class="text-primary">Vaildation</span> Game</h1>
+        </div>
+    </div>
+<div class="container">
+        
+<form class="row justify-content-center gx-3">
+  <div class="col-md-6">
+    <label for="validationServer01"  class="form-label fw-bold" mt-2>Name</label>
+    <input type="text" class="form-control " id="fname" name="name" placeholder="Name ..." required>
+    <div class="msg">
+        <span class="text-danger fw-bold" id="invalidInput1">Name is required, please enter your name.</span>
+    </div>
+
+  </div>
+  <div class="col-md-6">
+  <label for="exampleFormControlInput1" class="form-label fw-bold mt-2">Email address</label>
+  <input type="email" class="form-control " id="email" name="email" placeholder="name@example.com" required>
+  <div class="msg">
+    <span class="text-danger fw-bold" id="invalidInput2">E-mail is not valid, please enter correct E-mail.</span>
+  </div>
+  </div>
+
+  <div class="col-md-6 ">
+<label for="inputPassword5" class="form-label fw-bold mt-2">Password</label>
+<input type="password" id="pass" class="form-control " placeholder="Password ..." name="password" aria-describedby="passwordHelpBlock" required>
+<span class="text-danger fw-bold" id="invalidInput3">Password must be 8 characters at least.</span>
+  </div>
+
+  <div class="container">
+    <div class="row flex-column align-items-center justify-content-center">
+        <label for="" class="form-label fw-bold mt-3">Gender</label>
+
+        <div class="col-md-6 d-flex justify-content-center">
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" value="male" id="gender1">
+  <label class="form-check-label" for="gender">
+   Male
+  </label>
+</div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" value="female" id="gender2">
+  <label class="form-check-label" for="gender">Female</label>
+</div>
+
+        </div>
+        <span class="text-danger fw-bold" id="invalidInput4">Please select your gender.</span>
+
+  <label for="" class="form-label fw-bold mt-3">Sports</label>
+
+  <div class="col-md-6 d-flex justify-content-center">
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" name="sport" value="tennis" id="sport1">
+  <label class="form-check-label" for="sport">
+    Tennis
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" name="sport" value="running" id="sport2">
+  <label class="form-check-label" for="sport">
+Running
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" name="sport" value="football" id="sport3">
+  <label class="form-check-label" for="sport">
+Football
+  </label>
+</div>
+  </div>
+  <span class="text-danger fw-bold" id="invalidInput5">Please select your gender.</span>
+
+  <label for="" class="form-label fw-bold mt-3">Country</label>
+
+  <div class="col-md-6 d-flex">
+<select class="form-select" aria-label="Default select example" name="country">
+  <option selected id="selectedOption">Choose a country ...</option>
+  <option value="eg">Egypt</option>
+  <option value="fr">France</option>
+  <option value="it">Italy</option>
+  <option value="kw">Kuwait</option>
+  <option value="po">Portugal</option>
+  <option value="sa">Saudi Arabia</option>
+  <option value="sp">Spain</option>
+  <option value="ua">United Arab Emirates</option>
+  <option value="uk">United Kingdom</option>
+  <option value="us">United States of America</option>
+
+
+</select>
+  </div>
+    </div>
+  </div>
+  <span class="text-danger fw-bold" id="invalidInput6">Please select your country.</span>
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit" id="submitBtn">Submit</button>
+    <button class="btn btn-danger" type="reset">Reset</button>
+  </div>
+
+</form>
+</div>
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

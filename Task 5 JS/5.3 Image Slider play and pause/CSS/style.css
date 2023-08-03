@@ -1,0 +1,26 @@
+.slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: auto;
+}
+.slider .item img {
+    object-fit: cover;
+
+}
+.slider .previous, .slider .next , .slider .play , .slider .pause {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 6px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}  

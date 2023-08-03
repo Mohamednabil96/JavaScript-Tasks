@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4.1</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <div class="row justify-content-center"><p class="text-light pt-3 pb-2" id="p1">Nothing works!</p></div>
+
+    <div class="buttons">
+    <button class="btn btn-primary">Inner HTML</button>
+    <button class="btn btn-primary">Inner Text</button>
+    <button class="btn btn-primary">Change Style</button>
+    <button class="btn btn-primary">Text Content</button>
+    </div>
+
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <form method="get" name="myForm" class="">
+           
+            <div class="col-md-6 ">
+                <input type="text" placeholder="Name" id="fname" class="form-control m-2" required>
+                <input type="text" placeholder="Age" id="age" class="form-control m-2" required>
+
+            </div>
+
+
+            <div class="col-md-6 vaildation">
+                <span class="bg-danger text-light p-2 rounded" id="invalidInputs">Invalid inputs , please enter Name more than 4 charcters and Age more than 18</span>
+                <span class="bg-success text-light p-2 rounded" id="validInputs">Thank You!</span>
+            </div>
+    
+    <button type="submit" class="btn btn-primary" id="loginbtn">Login</button>
+        </form>
+    </div> 
+</div>
+
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

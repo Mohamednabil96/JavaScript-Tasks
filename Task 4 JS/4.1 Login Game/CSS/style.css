@@ -1,0 +1,18 @@
+body{
+    overflow-x: hidden;
+}
+div {
+    margin: 3vh;
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+    background-color: #0d6efd;
+}
+#invalidInputs{
+    display: none;
+}
+#validInputs{
+    display: none;
+}
